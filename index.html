@@ -1,0 +1,70 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Anime Catalogue</title>
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+          /* Show it is fixed to the top */
+          body {
+              min-height: 75rem;
+              padding-top: 4.5rem;
+          }
+
+          .bg-dark {
+              background-color: #128275!important;
+          }
+
+      </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper light-blue darken-4">
+          <ul class="left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="aLink" onclick="getFeaturedAnime(event)">Featured</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="hero-text">
+          <h1>Anime Catalogue</h1>
+          <p>Discover and browse the latest anime titles!</p>
+            <div class="row">
+                <form id="search_form" class="col s12">
+                  <div class="row">
+                    <div class="input-field">
+                      <input placeholder="Search..." name="search" id="search" type="text" class="validate" minlength=3>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <section class="container">
+        <h3 id="heading"></h3>
+        <div id="result" class="card-row">         
+        </div>
+      </section>
+
+      <footer class="page-footer white">
+
+        <div class="footer-copyright light-blue darken-4">
+          <div class="container">
+          Made with Jikan API
+          </div>
+        </div>
+      </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="myscript.js"></script>
+</body>
+</html>

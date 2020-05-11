@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .nav-wrapper {
+    align-items: flex-start;
+    height: 400px;
+  }
+}
+
+.banner {
+  background-color: #0091ea;
+  height: 270px;
+  width:100%;
+  background-size: cover;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+  .banner {
+    align-items: flex-start;
+    height: 400px;
+  }
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#search {
+  text-align: center;
+  color: black;
+  background-color:white;
+  border-radius: 5px;
+  width: 70%;
+}
+
+h3{
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: orange;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 270px;
+}
+
+.card {
+  width: 250px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  left: 30px;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: stretch;
+}
+
+.card-row > * {
+  flex-basis: 20rem;
+  flex-shrink: 0;
+}
+
+.card-row .card {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card-row .card > .card-content {
+  flex-grow: 1;
+}
+
+.card-row .card > .card-image {
+  flex-basis: 25rem;
+  flex-shrink: 0;
+  overflow-y: hidden;
+}
